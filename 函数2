@@ -1,0 +1,131 @@
+#include <stdio.h>
+//#include "add.h"
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int sum = Add(a, b);
+//	printf("%d\n", sum);
+//	return 0;
+//}
+///////////将1234的每一位依次输出
+//void print(int n)
+//{
+//	if (n > 9)
+//	{
+//		print(n / 10);
+//	}
+//	printf("%d ", n % 10);
+//}
+//int main()
+//{
+//	unsigned int num = 0;
+//	scanf("%d", &num);
+//	print(num);
+// 	return 0;
+//}
+
+//////////////////不允许创建变量，求字符串长度
+//int my_strlen(char*str)
+//{
+//	int count = 0; //有临时变量
+//	while (*str != '\0')
+//	{
+//		count++;
+//		str++;//指针向后移动一位
+//	}
+//	return count;
+//
+//}
+
+//int my_strlen(char* str)
+//{
+//	if (*str != '\0')
+//	{
+//		return (1 + my_strlen(str + 1));
+//	}
+//	else
+//		return 0;
+//}
+//int main()
+//{
+//	char arr[] = "abc";
+//	int len = my_strlen(arr);//传过去的首元素的地址
+//	printf("%d ", len);
+//	return 0;
+//}
+
+////////////////////递归与迭代
+//int Fac1(int n)
+//{
+//	int i = 1;
+//	int ret = 1;
+//	while (i <= n)
+//	{
+//		ret = ret * i;
+//		i++;
+//	}
+//	return ret;
+//}
+//int Fac2(int n)
+//{
+//	if (n <= 1)
+//		return 1;
+//	else
+//	{
+//		return n * Fac2(n - 1);//递归法
+//	}
+//}
+//int main()
+//{
+//	//求n的阶乘
+//	int n = 0;
+//	int ret = 0;
+//	scanf("%d", &n);
+//	ret=Fac2(n);
+//	printf("%d", ret);
+//	return 0;
+//}
+
+//////////////////求第n个斐波那契数列
+//Fib(n)=Fib(n-2)+Fib(n-1)  n>2
+
+//int Fib(int n)            //递归方法
+//{
+//	if (n <= 2)
+//	{
+//		return 1;
+//	}
+//	else
+//	{
+//		return Fib(n - 1) + Fib(n - 2);
+//	}
+//}
+
+//int Fib(int n) //迭代方法
+//{
+//	int a = 1;
+//	int b = 1;
+//	int c = 1;
+//	while (n>2)
+//	{
+//		c = a + b;
+//		a = b;
+//		b = c;
+//		n--;
+//	}
+//	return c;
+//}
+//int main()
+//{
+//	int n = 0;
+//	int ret = 0;
+//	scanf("%d", &n);
+//	ret = Fib(n);
+//	printf("%d", ret);
+//	return 0;
+//}
+
+///////////////////
+//汉诺塔问题
+//青蛙跳台阶问题
