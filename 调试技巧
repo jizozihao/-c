@@ -1,0 +1,149 @@
+#include <stdio.h>
+#include <stdlib.h>
+//int main()
+//{
+//	int i = 0;
+//	for (i = 0; i < 100; i++)
+//	{
+//		printf("%d ", i);
+//	}
+//	for (i = 0; i < 100; i++)
+//	{
+//		printf("%d ", i);
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int i = 0;
+//	int arr[10] = { 1,2,3,4,5,6,8,7,9,0 };
+//	for (i = 0; i <= 12; i++)
+//	{
+//		printf("hehe\n");
+//		arr[i] = 0;
+//	}
+//	return 0;
+//}
+
+//int Add(int a, int b)
+//{
+//	return a + b;
+//}
+//int main()
+//{
+//	printf("hehe\n");
+//	int a = 20;
+//	int b = 10;
+//	int c = Add(a, b);
+//	return 0;
+//}
+
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	return 0;
+//}
+
+//int main()
+//{
+//	int i = 0;
+//	int arr[10] = { 1,2,3,4,5,6,8,7,9,0 };
+//    printf("%p\n", &i);
+//	printf("%p\n", arr);
+//	
+//	return 0;
+//}
+
+//单独设置strcpy函数功能
+//void my_strcpy(char* dest, char* src)
+//{
+//	while (*src!='\0')
+//	{
+//		*dest = *src;
+//		src++;
+//		dest++;
+//	}
+//	*dest = *src;
+//	
+//}
+// 
+//void my_strcpy(char* dest, char* src)//优化1
+//{
+//	while (*dest++ = *src++)
+//	{
+//		;
+//	}
+//
+//}
+//void my_strcpy(char* dest, char* src)//优化2
+//{
+//	if (dest != NULL && src != NULL)//判断是否可以进行下去
+//	{
+//		while (*dest++ = *src++)
+//		{
+//			;
+//		}
+//	}
+//	
+//}
+//#include <assert.h>
+//void my_strcpy(char* dest,const char* src)//优化3
+//{                         //const出现时，变量不可更改
+//	assert(dest != NULL);//断言
+//	assert(src != NULL);
+//	while (*dest++ = *src++)//使用const可以避免dest和src写反
+//	{
+//		;
+//	}
+//}
+//char* my_strcpy(char* dest, const char* src)//优化3
+//{                         //const出现时，变量不可更改
+//	char* ret = dest;
+//	assert(dest != NULL);//断言
+//	assert(src != NULL);
+//	//把src指向的字符串拷贝到dest指向的空间里去，包含'\0'字符
+//	while (*dest++ = *src++)//使用const可以避免dest和src写反
+//	{
+//		;
+//	}
+//	return ret;
+//}
+//int main()
+//{
+//	//strcpy 字符串拷贝
+//	char arr1[] = "#####################";
+//	char arr2[] = "bit";
+//
+//	printf("arr1=%s\n", my_strcpy(arr1, arr2));
+//	return 0;
+//}
+//
+//
+////strlen函数的实现
+//int my_strlen(const char* str)
+//{
+//	int count = 0;
+//	assert(str != NULL);//保证指针的有效性
+//	while (*str != '\0')
+//	{
+//		count++;
+//		str++;
+//	}
+//	return count;
+//}
+//int main()
+//{
+//	char arr[] = "asdfgh";
+//	int len = my_strlen(arr);
+//	printf("%d\n", len);
+//	return 0;
+//}
+//
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int z = Add(a, b);
+//	printf("%d", z);
+//}
