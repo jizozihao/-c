@@ -1,0 +1,125 @@
+#include <stdio.h>
+
+//int main()
+//{
+//	//字符指针
+//	char ch = 'w';
+//	char* p = &ch;
+//	const char* p2 = "abcdef";//将首地址存放到p2中
+//	//指针数组-存放指针的数组
+//	int* arr[10];
+//	char* ch[5];
+//	//数组指针
+//	int* p3;//整型指针-指向整型的指针
+//	char* p4;//字符指针-指向字符的指针
+//	int arr2[5];//数组
+//	int* (pa)[5] = &arr2;//取出数组的地址,pa是一个数组指针
+//
+//	return 0;
+//}
+
+
+
+
+//void test(int arr[3][5])
+//{ }
+//void test1(int arr[][5])//只能省略行
+//{ }
+//void test2(int arr[3][])
+//{ }
+//void test3(int arr[][])
+//{ }
+//void test3(int* arr)//写法错误
+//{
+//
+//}
+//void test4(int (*arr)[5])//使用数组指针接收
+//{
+//
+//}
+//int main()
+//{
+//	int arr[3][5] = { 0 };
+//	//test(arr);//二维数组传参
+//	//test1(arr);
+//	//test2(arr);
+//	//test3(arr);//二维数组传参，传的是第一行的指针地址
+//	test4(arr);
+//	return 0;
+//}
+
+//一级指针传参
+//void test1(int* p)
+//{
+//
+//}
+//void test2(char* p)
+//{
+//
+//}
+//int main()
+//{
+//	int a = 10;
+//	int* p1 = &a;
+//	test1(&a);
+//	test1(p1);
+//	char ch = 'w';
+//	char* pc = &ch;
+//	test2(&ch);
+//	test2(pc);
+//	return 0;
+//}
+
+
+//void test(int** p)
+//{
+//
+//}
+//int main()
+//{
+//	int* ptr;
+//	int** pp = &ptr;
+//	test(&ptr);
+//	test(pp);
+//	int* arr[10];//指针数组首元素指针相当于二级指针
+//	test(arr);
+//	return 0;
+//}
+
+
+//int Add(int x, int y)
+//{
+//	int z = 0;
+//	z = x + y;
+//	return z;
+//}
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int arr[10] = { 0 };
+//	int (*p)[10] = &arr;//数组指针
+//	int (*pa)(int, int) = Add;//函数指针
+//	printf("%d\n", (*pa)(2, 3));
+//	//int ret = Add(a, b,);
+//
+//	//printf("%d\n", ret);
+//	//&函数名 和 函数名都是函数的地址
+//	/*printf("%p\n", &Add);
+//	printf("%p\n", Add);*/
+//	
+//	return 0;
+//}
+
+
+//void Print(char* str)
+//{
+//	printf("%s\n", str);
+//}
+//int main()
+//{
+////函数类型 新的名称  函数变量类型 函数名称
+//	void    (*p)     (char*) =     Print;
+//	(*p)("hello world");
+//	return 0;
+//}
