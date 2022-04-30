@@ -1,0 +1,5 @@
+﻿  shuati.c
+E:\桌面\c语言\niukew\niukew\shuati.c(147,27): warning C4013: “malloc”未定义；假设外部返回 int
+E:\桌面\c语言\niukew\niukew\shuati.c(185,8): warning C4013: “free”未定义；假设外部返回 int
+E:\桌面\c语言\niukew\niukew\shuati.c(147,1): warning C4047: “初始化”:“Node *”与“int”的间接级别不同
+  niukew.vcxproj -> E:\桌面\c语言\niukew\Debug\niukew.exe
